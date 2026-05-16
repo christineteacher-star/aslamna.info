@@ -1,0 +1,350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!-- Mirrored from aslamna.info/formulaire.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Aug 2017 15:02:18 GMT -->
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<TITLE>Envoyer un message par le formulaire de contact</TITLE>
+
+<!-- **** layout stylesheet **** -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <!-- **** colour scheme stylesheet **** -->
+  <link rel="stylesheet" type="text/css" href="style/colour.css" />
+
+
+<!--  Begin Template styles  --> 
+<style type="text/css">
+<!--
+body 
+{
+	margin-top: 32px;
+	font-family: Arial, Verdana,  Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: white;
+	color: black;
+}
+
+
+td.fct-image-cell
+{
+	border-style: solid;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 4px;
+	border-color: #707070;
+}
+
+td.fct-headline-cell
+{
+	letter-spacing: 0.2em;  
+	line-height: 34px; 
+	font-size: 32px; 
+	color: white; 
+	font-variant: small-caps;
+	background-color: #b0b0b0;
+	border-width: 0px;
+	padding: 8px;
+
+}
+td.fct-form-cell
+{
+	font-size: 10pt;
+	background-color: #b0b0b0;
+	border-width: 0px;
+	padding: 8px;
+	text-align: center;
+	color: white;
+}
+
+
+table.fct-backlink-table
+{
+	width: 100%;
+}
+
+td.fct-backlink-cell
+{
+	color: gray;
+	background-color: white;
+	font-size: 10pt;
+	border-width: 0px;
+	padding: 8px;
+	text-align: left;
+}
+
+a.fct-backlink
+{
+	color: gray;
+	background-color: white;
+}
+
+td.fct-poweredby-cell
+{
+	color: #a0a0a0;
+	background-color: white;
+	font-size: 10pt;
+	border-width: 0px;
+	padding: 8px;
+	text-align: right;
+}
+
+a.fct-poweredby
+{
+	color: #a0a0a0;
+	background-color: white;
+}
+<!--  End Template styles  -->   
+<!--  Begin FastContact form styles  -->   
+<style type="text/css">
+<!--
+.fc-form
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+  	font-size: 12pt; 
+}
+table.fc-form
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+	background: #b0b0b0;
+	color: black;
+}
+input.fc-form
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+textarea.fc-form
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+}
+.fc-msg
+{
+	background: #b0b0b0;
+    color: maroon;
+}
+.style1 {color: #FFFFFF}
+.style4 {color: #777}
+-->
+</style>
+<!--  End FastContact form styles  -->
+</HEAD>
+
+<BODY>
+<center>
+<div id="main">
+<div id="header">
+      <div align="center"><img src="image/banniere%20aslamna.jpg" alt="" width="727" height="80" /></div>
+</div>
+    <div id="menu">
+      <!-- rounded corners - top **** -->
+      <div class="mtop">
+        <div class="m1"></div>
+        <div class="m2"></div>
+        <div class="m3"></div>
+        <div class="m4"></div>
+      </div>
+      <ul>
+        <div align="center">
+          <!-- **** INSERT NAVIGATION ITEMS HERE (use id="selected" to identify the page you're on **** -->
+        </div>
+        <li>
+          <div align="left"><a id="selected" href="index-2.html">welcome</a></div>
+        </li>
+        <li><a href="cours.html">cours</a></li>
+        <li><a href="articles.html">articles</a></li>
+        <li><a href="ressources.html">ressources</a></li>
+        <li><a href="contact.html">contact </a></li>
+      </ul>
+      <!-- rounded corners - bottom **** -->
+      <div class="mbottom">
+        <div class="m4"></div>
+        <div class="m3"></div>
+        <div class="m2"></div>
+        <div class="m1"></div>
+      </div>
+    </div>
+<p>&nbsp;</p>
+    <p align="center"><img src="image/aslamna%20logo-2.jpg" width="165" height="73"></p>
+    <p align="center" class="style4"><script language="javascript" type="text/javascript">
+
+	var fixd;
+
+	function isGregLeapYear(year)
+	{
+		return year%4 == 0 && year%100 != 0 || year%400 == 0;
+	}
+
+	function gregToFixed(year, month, day)
+	{
+		var a = Math.floor((year - 1) / 4);
+		var b = Math.floor((year - 1) / 100);
+		var c = Math.floor((year - 1) / 400);
+		var d = Math.floor((367 * month - 362) / 12);
+
+		if (month <= 2)
+			e = 0;
+		else if (month > 2 && isGregLeapYear(year))
+			e = -1;
+		else
+			e = -2;
+
+		return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+	}
+
+	function Hijri(year, month, day)
+	{
+		this.year = year;
+		this.month = month;
+		this.day = day;
+		this.toFixed = hijriToFixed;
+		this.toString = hijriToString;
+	}
+
+	function hijriToFixed()
+	{
+		return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+ 			Math.floor((3 + 11 * this.year) / 30) + 227015 - 1;
+	}
+
+	function hijriToString()
+	{
+		var months = new Array("Muharram","Safar","Rabee' I","Rabee' II","Jumada I","Jumada II","Rajab","Sha'ban","Ramadhan","Shawwal","Dhul Qa'da","Dhulhijja");
+  	return this.day + " " + months[this.month - 1]+ " " + this.year;
+	}
+
+	function fixedToHijri(f)
+	{
+  	var i=new Hijri(1100, 1, 1);
+   	i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+   	var i2=new Hijri(i.year, 1, 1);
+   	var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+   	i.month = Math.min(m, 12);
+   	i2.year = i.year;
+	 	i2.month = i.month;
+	 	i2.day = 1;
+   	i.day = f - i2.toFixed() + 1;
+   	return i;
+	}
+
+	var tod=new Date();
+	var weekday=new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi");
+	var monthname=new Array("Janvier","Fvrier","Mars","Avril","Mai","Juin","Juillet","Aot","Septembre","Octobre","Novembre","Decembre");
+
+	var y = tod.getFullYear();
+	var m = tod.getMonth();
+	var d = tod.getDate();
+	var dow = tod.getDay();
+	document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+	m++;
+	fixd=gregToFixed(y, m, d);
+	var h=new Hijri(1421, 11, 28);
+	h = fixedToHijri(fixd);
+	document.write(" - " + h.toString());
+
+            	</script>&nbsp;</p>
+    <table cellpadding=0 cellspacing=0 width=640>
+<tr>
+	<td valign=bottom class="fct-image-cell">
+
+		<img src="image/4g0hf2r.srgn6.f0cc.img_9598.ed2.jpg" alt="" width=640 height=235></td>
+</tr>
+<tr>
+	<td valign=top class=fct-headline-cell>
+		<div align="center">Formulaire de contact
+      </div></td>
+</tr>
+<tr>
+	<td class=fct-form-cell>
+		 <center>
+		<!-- Start of FastContact Form -->
+<FORM action='http://form.fastcontact.com/fc/form.html' method=post>
+<INPUT type=hidden name='a' value='9675400851'>
+<INPUT type=hidden name='f' value='62'>
+<script type='text/javascript'>document.write('<input type=hidden name=jcd value="' + ( ( document.charset == null ) ? document.characterSet : document.charset) + '">');</script>
+<noscript><input type=hidden name=ics value='UTF-8'></noscript>
+<INPUT type=hidden name='op' value='proc'>
+<INPUT type=hidden name='referer'>
+<table class='fc-form'>
+<tr>
+<td colspan=2><span class='fc-msg'>&nbsp;</span></td>
+</tr>
+<tr>
+<td align=right><span class='fc-prompt style1'>Votre adresse e-mail</span></td>
+<td><INPUT type=text name='email' class='fc-form' ></td>
+</tr>
+<tr>
+<td align=right><span class='fc-prompt style1'>Objet du message </span></td>
+<td><INPUT type=text name='sujet' class='fc-form' ></td>
+</tr>
+<tr>
+<td align=right><span class='fc-prompt style1'>Message</span></td>
+<td><TEXTAREA name='message' rows=12 cols=40 class='fc-form'>
+</TEXTAREA></td>
+</tr>
+<tr><td></td><td>
+<img src='../form.fastcontact.com/fc/captcha/9675400851.62.1196851629707.jpg' width=100 height=30 alt='security code'></td>
+</tr>
+<tr>
+<td align=right><span class="style1">Taper les caractères qui apparaissent sur l&#39;image ci-dessus</span></td>
+<td><INPUT type=text name='Captcha' class='fc-form' ></td>
+</tr>
+<tr>
+<td align=right></td><td><INPUT type='submit' name='send' value='Envoyer' class='fc-form'></td>
+</tr>
+</table>
+</FORM>
+<!-- End of FastContact Form -->
+
+		</center>
+
+		 
+	</td>
+</tr>
+<tr>
+	<td>
+	<table class=fct-backlink-table>
+	<tr>
+		<td class=fct-backlink-cell>&nbsp;</td>
+
+		<td class=fct-poweredby-cell>
+			powered by <a class=fct-poweredby href="http://www.fastcontact.com/">FastContact</a>
+		</td>
+	</tr>
+	</table>
+</tr>
+</table>
+<p><div id="Layer2"><a href="http://www.xiti.com/xiti.asp?s=332214" title="WebAnalytics">
+<script type="text/javascript">
+<!--
+Xt_param = 's=332214&p=formulaire';
+try {Xt_r = top.document.referrer;}
+catch(e) {Xt_r = document.referrer; }
+Xt_h = new Date();
+Xt_i = '<img width="39" height="25" border="0" alt="" ';
+Xt_i += 'src="http://logv144.xiti.com/hit.xiti?'+Xt_param;
+Xt_i += '&hl='+Xt_h.getHours()+'x'+Xt_h.getMinutes()+'x'+Xt_h.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xt_s=screen;Xt_i+='&r='+Xt_s.width+'x'+Xt_s.height+'x'+Xt_s.pixelDepth+'x'+Xt_s.colorDepth;}
+document.write(Xt_i+'&ref='+Xt_r.replace(/[<>"]/g, '').replace(/&/g, '$')+'" title="Internet Audience">');
+//-->
+</script>
+</a><noscript>
+<a href="http://www.xiti.com/xiti.asp?s=332214" title="WebAnalytics">
+Mesure d'audience ROI statistique webanalytics par 
+<div align="center"><img width="39" height="25" src="http://logv144.xiti.com/hit.xiti?s=332214&amp;p=" alt="WebAnalytics" /></div>
+</a>
+</noscript></div>&nbsp;</p>
+<div id="footer">
+      <p>&copy; Aslamna Toute reproduction non   commerciale pour diffuser le message de l'Islam est encouragee</p>
+      <p><a href="Tous%20les%20articles.html"> </a>| <a href="#">contact@aslamna.info</a>| <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.dcarter.co.uk/">design by dcarter</a> | <a href="http://creativecommons.org/licenses/by/2.5/">cc</a> </p>
+      </p>
+</div>
+</BODY>
+
+
+<!-- Mirrored from aslamna.info/formulaire.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Aug 2017 15:02:45 GMT -->
+</HTML>
