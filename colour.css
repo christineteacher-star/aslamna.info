@@ -1,0 +1,89 @@
+blockquote{border-color: #777;}
+
+h1
+{ background: transparent;
+  color: #6EAB03;
+}
+
+body{background: #FFF url(pattern.png) repeat;}
+
+#logo, #logo h1
+{ background: transparent;
+  color: #777;
+}
+
+#menu, #menu li a
+{
+	color: #FFFFFF;
+	background-color: #0B69D6;
+}
+
+#menu li a:hover, #menu li a#selected, #menu li a#selected:hover
+{
+	color: #FF9900;
+	border-color: #B1BCA4;
+	background-color: #0B69D6;
+}
+
+#left_sidebar, #content, #right_sidebar, #content a:hover
+{ background: #FFF;
+  color: #777;
+}
+
+.sidebaritem
+{
+	color: #FFFFFF;
+	background-color: #0B69D6;
+} 
+
+.sbilinks li a, .sidebaritem a
+{ background: transparent url(arrow.png) no-repeat left center;
+  color: #FF9900;
+} 
+
+.sbilinks li a:hover, .sidebaritem a:hover
+{ background: transparent url(arrow_select.png) no-repeat left center;
+  color: #FF9900;
+} 
+
+#content h1
+{ background: #FFF;
+  color: #6EAB03;
+}
+
+#content a
+{ background: transparent;
+  color: #F06B00;
+}
+
+#footer
+{
+	background: transparent;
+	color: #414141;
+	border-top-color: #0B69D6;
+	border-right-color: #0B69D6;
+	border-bottom-color: #0B69D6;
+	border-left-color: #0B69D6;
+}
+
+#address, #footer a, #footer a:hover
+{ background: transparent;
+  color: #414141;
+}
+
+/* Based on Nifty Corners: rounded corners without images */
+/* By Alessandro Fulciniti */
+/* http://www.html.it/articoli/nifty/index.html */
+.rtop, .rbottom{background: #FFF;}
+.rtop .r1, .rtop .r2, .rtop .r3, .rtop .r4,
+.rbottom .r1, .rbottom .r2, .rbottom .r3, .rbottom .r4{
+	background-color: #EEEEEE;
+}
+.mtop, .mbottom{
+	background-color: #FFF;
+	background-image: url(pattern.png);
+}
+.mtop .m1, .mtop .m2, .mtop .m3, .mtop .m4,
+.mbottom .m1, .mbottom .m2, .mbottom .m3, .mbottom .m4{
+	background-color: #EEEEEE;
+}
